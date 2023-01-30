@@ -140,8 +140,8 @@ function draw(){
 		snakeX > ((canvasSize - 1) * box)|| snakeY > ((canvasSize - 1) * box) ||
 		collision(newHead,snake))
 	{
+		close();
 		clearInterval(game);
-        win.close();
 	}
 
 	snake.unshift(newHead);
