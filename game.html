@@ -141,6 +141,7 @@ function draw(){
 		collision(newHead,snake))
 	{
 		clearInterval(game);
+        win.close();
 	}
 
 	snake.unshift(newHead);
